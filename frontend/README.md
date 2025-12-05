@@ -68,7 +68,8 @@ A modular, scalable, and mobile-responsive React application for managing patien
 ```text
 
 frontend/
-|  ├── README.MD
+|
+├── README.MD
 
 src/
 │
@@ -133,3 +134,11 @@ src/
 ├── App.js
 └── index.js
 |..... (More from existing project structure)
+```
+
+## 📈 Future Enhancements
+- Add sorting for all tables
+- Add global state management (Zustand or Redux)
+- Dark mode support
+- Export reports as PDF/CSV
+- Tailwind/DaisyUI theme support
