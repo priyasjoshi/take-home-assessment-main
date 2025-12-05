@@ -1,0 +1,148 @@
+/* ------------------------------
+   Container & Layout
+--------------------------------*/
+.stats-dashboard-container {
+  padding: 2rem;
+  background: #f5f7fa;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.stats-dashboard-container h2 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid layout for cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Stat card styling */
+.stat-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-color: #667eea;
+}
+
+.stat-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #667eea;
+  margin: 0;
+}
+
+/* Pie chart container styling */
+.chart-container {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.chart-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Pie chart legend */
+.pie-legend {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.pie-legend text {
+  fill: #333;
+}
+
+/* Loading / Error messages */
+.loading,
+.error {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+/* ------------------------------
+   Responsive Design
+--------------------------------*/
+@media (max-width: 992px) {
+  .stats-dashboard-container {
+    padding: 1.5rem;
+  }
+  .stats-grid {
+    gap: 1rem;
+  }
+  .stat-card {
+    padding: 1.25rem;
+  }
+  .chart-container {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-dashboard-container {
+    padding: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card h3,
+  .stat-card p {
+    text-align: center;
+  }
+
+  .pie-legend {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    padding: 12px;
+  }
+  .pie-legend {
+    font-size: 0.8rem;
+  }
+}
