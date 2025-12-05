@@ -118,6 +118,61 @@ src/
 └── index.js
 | ..... (More from existing project structure)
 
+.
+├── src/
+│   ├── components/                          # All UI components organized by feature
+│   │   ├── ConsentManagement/               # Manage, create, update consents
+│   │   │   ├── ConsentCard.js
+│   │   │   ├── ConsentCreateForm.js
+│   │   │   ├── ConsentFilters.js
+│   │   │   ├── ConsentList.js
+│   │   │   ├── ConsentManagement.css
+│   │   │   └── ConsentManagement.js
+│   │   ├── PatientDetail/                   # Patient profile + medical records
+│   │   │   ├── PatientDetail.css
+│   │   │   ├── PatientDetail.js
+│   │   │   ├── PatientInfo.js
+│   │   │   ├── PatientRecords.js
+│   │   │   └── RecordCard.js
+│   │   ├── PatientList/                    # Patient directory with search & pagination
+│   │   │   ├── PaginationControls.js
+│   │   │   ├── PatientList.css
+│   │   │   ├── PatientList.js
+│   │   │   ├── PatientTable.js
+│   │   │   └── PatientTableRow.js
+│   │   ├── StatsDashboard/                # Analytics & charts
+│   │   │   ├── ConsentPieChart.js
+│   │   │   ├── StatCard.js
+│   │   │   ├── StatsDashboard.css
+│   │   │   ├── StatsDashboard.js
+│   │   │   └── StatsGrid.js
+│   │   ├── TransactionHistory/            # Transaction logs + blockchain activity
+│   │   │   ├── TransactionHistory.css
+│   │   │   ├── TransactionHistory.js
+│   │   │   ├── TransactionRow.js
+│   │   │   └── TransactionTable.js
+│   │   └── WalletConnection.js            # Wallet connection
+│   │   └── WalletConnection.css
+│   ├── hooks/                             # Custom reusable React hooks
+│   │   ├── useConsents.js
+│   │   ├── useCreateConsent.js
+│   │   ├── useDebounce.js
+│   │   ├── usePatientDetail.js
+│   │   ├── usePatientList.js
+│   │   ├── useStats.js
+│   │   ├── useTransactions.js
+│   │   ├── useUpdateConsent.js
+│   │   └── useWeb3.js
+│   ├── services/                         # API service layer
+│   │   └── apiService.js
+│   ├── utils/                            # Helper utilities
+│   │   ├── calculateAge.js
+│   │   └── formatTransaction.js
+│   ├── App.js
+│   └── index.js
+└── README.md                            # Project documentation
+
+
 📈 Future Enhancements
 
     • Add sorting for all tables
