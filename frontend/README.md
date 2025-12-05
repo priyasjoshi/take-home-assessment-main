@@ -135,6 +135,7 @@ src/
 └── index.js
 |..... (More from existing project structure)
 ```
+---
 
 ## 📈 Future Enhancements
 - Add sorting for all tables
