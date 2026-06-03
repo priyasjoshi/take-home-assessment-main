@@ -1,5 +1,4 @@
-# AI Health Chains - Web3 MERN Stack Developer Assessment
-
+# AI Health Chains - Web3 MERN Stack
 ## Overview
 
 This assessment is designed to evaluate your skills as a Senior Web3 MERN Stack Developer. The project is a healthcare data management platform that integrates blockchain technology for consent tracking and data integrity.
